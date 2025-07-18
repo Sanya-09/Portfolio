@@ -1,0 +1,189 @@
+body {
+  background-image: url("main_bg.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  color: #AEC8A4;
+  letter-spacing: 2px;
+}
+
+#heading {
+  color: white;
+  letter-spacing: 6px;
+  font-size: 30px;
+  margin-top: -10%;
+  animation: fadeSlideUp 2s ease-out forwards;
+}
+
+#box1 {
+  width: 600px;
+  height: 170px;
+  padding: 20%;
+  padding-left: 9%;
+  padding-top: 14%;
+}
+
+#h11 {
+  font-weight: lighter;
+  margin-top: -17%;
+  margin-left: 1%;
+  letter-spacing: 3px;
+  font-size: 55px;
+}
+
+#h12 {
+  font-weight: bolder;
+  margin-top: -7%;
+  font-size: 80px;
+}
+
+
+.my-button1, .my-button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.my-button1:hover, .my-button2:hover {
+  background-color: white;
+  color: black;
+}
+
+#but1 {
+  width: 300px;
+  height: 40px;
+  padding: 1%;
+  letter-spacing: 3px;
+  margin-top: -23%; 
+  margin-left: 7.8%;
+  
+}
+
+#icons {
+  display: flex;
+  gap: 20px;
+  padding: 1%;
+  margin-top: 8%;
+  margin-left: 10%;
+  font-size: 26px;
+  animation: slideFadeIn 2.5s ease-out forwards;
+}
+
+#icons a:hover i {
+  transform: scale(1.2);
+}
+
+a:visited,
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+  
+}
+
+#a1, #a2, #a3, #a4 {
+  text-decoration: none;
+  margin-right: 10%;
+  transition: transform 0.3s ease;
+}
+
+header {
+  font-family: Montserrat;
+  margin-top: 5%;
+  margin: 5%;
+  margin-left: 9%;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+/* Animations */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-name {
+  animation: floatIn 3s ease-in-out forwards;
+}
+
+.animate-title {
+  animation: fadeSlideUp 3s ease-in-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #box1 {
+    padding: 10% 5%;
+  }
+
+  #h11 {
+    font-size: 40px;
+  }
+
+  #h12 {
+    font-size: 50px;
+  }
+
+  #heading {
+    font-size: 20px;
+  }
+
+  #but1 {
+    margin-left: 5%;
+    width: 100%;
+  }
+
+  #icons {
+    margin-left: 5%;
+    flex-wrap: wrap;
+  }
+
+  header {
+    margin-left: 5%;
+    font-size: 1em;
+    flex-wrap: wrap;
+  }
+}
