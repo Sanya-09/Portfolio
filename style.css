@@ -74,12 +74,13 @@ h1 {
 
 #icons {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   padding: 1%;
-  margin-top: 8%;
+  margin-top: 10px;
   margin-left: 10%;
   font-size: 26px;
   animation: slideFadeIn 2.5s ease-out forwards;
+  color: black;
 }
 
 #icons a:hover i {
@@ -96,7 +97,7 @@ a:hover {
   
 }
 
-#a1, #a2, #a3, #a4 {
+#a1, #a2, #a3, #a4, #a5 {
   text-decoration: none;
   margin-right: 10%;
   transition: transform 0.3s ease;
