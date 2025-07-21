@@ -51,6 +51,7 @@ h1 {
     text-align: right;
 }
 
+/* Email below heading */
 #j1 {
     font-family: Montserrat;
     font-size: 20px;
@@ -86,7 +87,7 @@ h1 {
     color: black;
 }
 
-/* Footer Text */
+/* Footer Location Text */
 #box12 {
     font-family: Montserrat;
     color: white;
